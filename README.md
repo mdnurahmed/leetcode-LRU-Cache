@@ -81,9 +81,9 @@ void compress() {
 ```
 
 ### way 2
-I can use a conatiner (linked list is more appropriate data structure) for this . Lets call this order_of_keys. Elements in this container are unique since keys are unique - 
+I can use a conatiner (linked list is more appropriate data structure for this) . Lets call this order_of_keys. Elements in this container are unique since keys are unique - 
 
 ```A-B-C-D // MRU ... LRU```
 
-To maintain the order of the list, order_of_keys in O(1) we can have another lookup table .Lets call this position_of_keys
+To maintain the order of the linked list, order_of_keys in O(1) we can have another lookup table .Lets call this position_of_keys
 The linked list holds keys in the order they were accessed . So whenever our dictionary reaches capacity ,it will evict the key in rightmost of list and its corresponding value from dictionary . This key will also be removed from order_of_keys list and position_of_keys table 
