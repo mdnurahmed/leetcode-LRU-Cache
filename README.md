@@ -21,7 +21,7 @@ Output
 [null, null, null, 1, null, -1, null, -1, 3, 4]
 
 ### Explanation
-LRUCache lRUCache = new LRUCache(2);
+```LRUCache lRUCache = new LRUCache(2);
 lRUCache.put(1, 1); // cache is {1=1}
 lRUCache.put(2, 2); // cache is {1=1, 2=2}
 lRUCache.get(1);    // return 1
@@ -31,7 +31,7 @@ lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
 lRUCache.get(1);    // return -1 (not found)
 lRUCache.get(3);    // return 3
 lRUCache.get(4);    // return 4
- 
+ ```
 
 ### Constraints:
 
