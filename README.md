@@ -50,13 +50,15 @@ sorted map with keys = timestamps and values = keys of dictionary
 Instead of having another lookup table for key - timestamp we can store timestamp in the cache/dictionary. 
 
 Table 1 : (cache/dictionary) is a unordered map 
+
 | key                | values                             | 
-| --------------------------------------------------------|
+| -------------------|------------------------------------|
 | keys of cache      | (values of cache,timestamp of keys)|
+
 
 Table 2 : (track) is an ordered map. tracks least recently used keys as the keys are sorted by timestamps
 | key                            | values                    | 
-| -----------------------------------------------------------|
+| -------------------------------|---------------------------|
 | timestamp of keys in cache     | keys in cache             |
 
 complexity : O(mlogn) time and O(n) space where m is number of operations and n is size of the cache 
