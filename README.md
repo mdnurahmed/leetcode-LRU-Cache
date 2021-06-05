@@ -46,7 +46,7 @@ I also need to have have some way/data structure to track the relative order of 
 I can do this 2 ways
 
 ### [Way 1](https://github.com/mdnurahmed/leetcode-LRU-Cache/blob/main/way1.cc) 
-sorted map with keys = timestamps and values = keys of dictionary  
+sorted map with keys = timestamps and values = keys of dictionary . 
 Instead of having another lookup table for key - timestamp we can store timestamp in the cache/dictionary. 
 
 Table 1 : (cache/dictionary) is a unordered map 
